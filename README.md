@@ -50,10 +50,36 @@ Are your downloads or document folders a mess? This script automatically scans a
    ```
 4. Check the `organized_files` directory to see your sorted files.
 
+## Automating & Scheduling (Desktop Cleanup)
+
+To make this a fully automated background cleanup tool, you can schedule it to run automatically.
+
+### 🪟 Windows (Task Scheduler)
+To run the script automatically every day or at startup:
+1. Press `Win + R`, type `taskschd.msc`, and press **Enter** to open the Windows Task Scheduler.
+2. Click **Create Basic Task...** in the right-hand panel.
+3. Name the task (e.g., `Desktop File Organizer`) and set the trigger to **Daily** or **At Log On**.
+4. Set Action to **Start a Program**.
+5. Configure the program:
+   - **Program/script:** `F:\SYNTEC\file-organizer-script\venv\Scripts\python.exe`
+   - **Add arguments:** `organizer.py`
+   - **Start in:** `F:\SYNTEC\file-organizer-script\`
+6. Click **Finish**. Now, your workspace is organized automatically!
+
+### 🐧 Linux & macOS (Cron Job)
+To schedule it on Unix systems, open your terminal and edit your crontab:
+```bash
+crontab -e
+```
+Add the following line to automatically run the script every day at 12:00 PM:
+```bash
+0 12 * * * /absolute/path/to/venv/bin/python /absolute/path/to/file-organizer-script/organizer.py
+```
+
 ## Future Improvements
 
 - Add a graphical user interface (GUI) using Tkinter or PyQt.
 - Support for recursive scanning (organizing files in subfolders).
 - Configuration file (JSON/YAML) for easier customization by non-programmers.
-- Setup a scheduled task (cron/Task Scheduler) for background auto-organization.
 - Add an undo feature to revert the last organization run.
+
