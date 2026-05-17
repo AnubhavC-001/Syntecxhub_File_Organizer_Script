@@ -19,7 +19,7 @@ Are your downloads or document folders a mess? This script automatically scans a
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Syntecxhub/Syntecxhub_File_Organizer_Script.git
+   git clone https://github.com/AnubhavC-001/Syntecxhub_File_Organizer_Script.git
    cd Syntecxhub_File_Organizer_Script
    ```
 
