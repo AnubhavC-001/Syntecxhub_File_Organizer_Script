@@ -6,6 +6,9 @@ A complete professional Python automation project to automatically organize your
 
 Are your downloads or document folders a mess? This script automatically scans a specified folder and organizes all files into categorized subfolders based on their file extensions (e.g., Images, Documents, Videos, etc.).
 
+### 📺 CLI Demo
+<video src="demo_cli.mp4" width="100%" controls></video>
+
 ## Features
 
 - **Automated Sorting:** Automatically categorizes files by extension into specific folders.
@@ -53,6 +56,9 @@ Are your downloads or document folders a mess? This script automatically scans a
 ## Automating & Scheduling (Desktop Cleanup)
 
 To make this a fully automated background cleanup tool, you can schedule it to run automatically.
+
+### 📺 Task Scheduler Demo
+<video src="demo_scheduler.mp4" width="100%" controls></video>
 
 ### 🪟 Windows (Task Scheduler)
 To run the script automatically every day or at startup:
